@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .crypto-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .crypto-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .crypto-name {
+            font-weight: bold;
+        }
+        .price-current {
+            color: purple;
+        }
+        .price-buy {
+            color: green;
+        }
+        .price-sell {
+            color: blue;
+        }
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crypto Tracker</h1>
+
+    <div class="crypto-container">
+        <div class="crypto-item">
+            <span class="crypto-name">Bitcoin (BTC)</span>
+            <span class="price-current">Price: $50,000</span>
+            <span class="price-buy">Buy: $49,500</span>
+            <span class="price-sell">Sell: $50,100</span>
+        </div>
+        <!-- Additional crypto items will be added dynamically -->
+    </div>
+
+    <div class="controls">
+        <button id="addCryptoBtn">Add Crypto</button>
+        <button id="fetchPricesBtn">Fetch Prices</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
